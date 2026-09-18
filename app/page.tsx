@@ -705,17 +705,6 @@ const projects = [
     stats: "Saúde • SEO 100",
   },
   {
-    title: "Niza Bet",
-    subtitle: "CSS • Betting UI",
-    desc: "Interface para plataforma de apostas com design system dark, componentes interativos e experiência fluida.",
-    tags: ["CSS", "JavaScript", "UI/UX", "Vercel"],
-    gradient: "from-amber-500 via-orange-500 to-red-600",
-    icon: Zap,
-    link: "https://niza-bet.vercel.app",
-    github: "https://github.com/Arthurmt15/niza-bet",
-    stats: "Betting • UI",
-  },
-  {
     title: "Pagamento Aprovado",
     subtitle: "HTML • Checkout",
     desc: "Página de confirmação de pagamento com feedback visual, animações e pronta para integração com gateway.",
@@ -748,7 +737,7 @@ function Projetos() {
             target="_blank"
             className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors"
           >
-            Ver todos no GitHub • 8 projetos na Vercel
+            Ver todos no GitHub • 6 projetos na Vercel
             <ExternalLink size={14} />
           </a>
         </div>
