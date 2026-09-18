@@ -28,6 +28,7 @@ import {
   Wallet,
   Utensils,
   ShoppingBag,
+  Instagram,
 } from "lucide-react";
 
 const HeartPulseIcon = HeartPulse;
@@ -899,7 +900,8 @@ function Contato() {
               {[
                 { icon: Mail, label: "E-mail", value: "arthurknf@gmail.com", href: "mailto:arthurknf@gmail.com" },
                 { icon: Github, label: "GitHub", value: "github.com/Arthurmt15", href: "https://github.com/Arthurmt15" },
-                { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/arthur", href: "https://linkedin.com" },
+                { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/arthur-martiniano-8b1899171", href: "https://www.linkedin.com/in/arthur-martiniano-8b1899171/" },
+                { icon: Instagram, label: "Instagram", value: "@arthurmartiniano__", href: "https://www.instagram.com/arthurmartiniano__/" },
               ].map((contact) => {
                 const Icon = contact.icon;
                 return (
@@ -1043,7 +1045,8 @@ function Footer() {
           <div className="flex items-center gap-2">
             {[
               { icon: Github, href: "https://github.com/Arthurmt15" },
-              { icon: Linkedin, href: "https://linkedin.com" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/arthur-martiniano-8b1899171/" },
+              { icon: Instagram, href: "https://www.instagram.com/arthurmartiniano__/" },
               { icon: Mail, href: "mailto:arthurknf@gmail.com" },
             ].map((social, i) => (
               <a
