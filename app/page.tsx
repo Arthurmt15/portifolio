@@ -24,7 +24,13 @@ import {
   Zap,
   Dot,
   Check,
+  HeartPulse,
+  Wallet,
+  Utensils,
+  ShoppingBag,
 } from "lucide-react";
+
+const HeartPulseIcon = HeartPulse;
 import { useState, useEffect, useRef } from "react";
 import { GlowButton } from "@/components/ui/glow-button";
 
@@ -270,7 +276,7 @@ function Hero() {
               </GlowButton>
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Arthurmt15"
               target="_blank"
               className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/50 px-6 py-3 text-sm text-zinc-300 hover:text-white hover:border-zinc-700 transition-colors backdrop-blur"
             >
@@ -641,37 +647,84 @@ function Stack() {
   );
 }
 
-// -------------------- Projetos --------------------
+// -------------------- Projetos - Reais da Vercel --------------------
 const projects = [
   {
-    title: "Fast Trade",
-    subtitle: "Microsserviços • .NET",
-    desc: "Aplicação de trading de alta performance com arquitetura de microsserviços em .NET. Event-driven, resiliência e escalabilidade horizontal.",
-    tags: [".NET Core", "Microsserviços", "RabbitMQ", "SQL Server"],
+    title: "Controle de Finanças",
+    subtitle: "TypeScript • Next.js • Vercel",
+    desc: "Sistema completo de gestão financeira pessoal com dashboard interativo, controle de receitas/despesas, categorias e gráficos em tempo real. Projeto mais recente e estrelado.",
+    tags: ["TypeScript", "Next.js", "Tailwind", "Chart.js"],
     gradient: "from-cyan-500 via-blue-500 to-violet-600",
-    icon: Workflow,
-    link: "https://vercel.com",
-    stats: "1.2k req/s • p95 45ms",
-  },
-  {
-    title: "Observa Natal",
-    subtitle: "Indicadores Públicos • Portal",
-    desc: "Portal de indicadores públicos de Natal/RN. Integração autônoma de dados, dashboards interativos com ECharts e transparência cidadã.",
-    tags: ["Laravel", "MySQL", "ECharts", "APIs Públicas"],
-    gradient: "from-violet-600 via-fuchsia-500 to-pink-500",
     icon: BarChart3,
-    link: "https://vercel.com",
-    stats: "50+ indicadores • Tempo real",
+    link: "https://controle-de-financas-nine.vercel.app",
+    github: "https://github.com/Arthurmt15/Controle-de-Financas",
+    stats: "★ Destaque • 2026",
   },
   {
-    title: "Automação & Data Processing",
-    subtitle: "Python • Pipelines",
-    desc: "Scripts e pipelines para integração e processamento de dados. ETL, automação de ingestão e transformação para ecossistemas robustos.",
-    tags: ["Python", "FastAPI", "Pandas", "Docker"],
+    title: "Restaurante",
+    subtitle: "TypeScript • Cardápio Digital",
+    desc: "Plataforma para restaurante com cardápio digital, gerenciamento de pedidos e interface moderna. Experiência de usuário otimizada para mobile.",
+    tags: ["TypeScript", "React", "Tailwind", "Vercel"],
+    gradient: "from-orange-500 via-red-500 to-pink-600",
+    icon: Workflow,
+    link: "https://restaurante-phi-silk.vercel.app",
+    github: "https://github.com/Arthurmt15/restaurante",
+    stats: "Food Tech • Live",
+  },
+  {
+    title: "Finanças Beta",
+    subtitle: "HTML • Finanças Pessoais",
+    desc: "Portal beta de finanças com interface leve e rápida. Protótipo validado para evolução do Controle de Finanças.",
+    tags: ["HTML", "JavaScript", "CSS", "Vercel"],
     gradient: "from-emerald-500 via-teal-500 to-cyan-500",
-    icon: Cpu,
-    link: "https://vercel.com",
-    stats: "Automação 10x mais rápida",
+    icon: Database,
+    link: "https://financas-beta.vercel.app",
+    github: "https://github.com/Arthurmt15/financas",
+    stats: "Beta • Online",
+  },
+  {
+    title: "SwellRepair",
+    subtitle: "HTML • Landing Page",
+    desc: "Landing page para serviço de reparo com inspiração no universo do surfe. Design clean, responsivo e focado em conversão.",
+    tags: ["HTML", "CSS", "JavaScript", "Vercel"],
+    gradient: "from-sky-500 via-cyan-500 to-blue-600",
+    icon: Waves,
+    link: "https://swellrepair.vercel.app",
+    github: "https://github.com/Arthurmt15/swellrepair",
+    stats: "Surfe • Conversão",
+  },
+  {
+    title: "DoctorCare",
+    subtitle: "HTML • Saúde",
+    desc: "Landing page para clínica médica com agendamento, apresentação de serviços e design acolhedor. Foco em acessibilidade e SEO.",
+    tags: ["HTML", "CSS", "JavaScript", "Responsivo"],
+    gradient: "from-violet-600 via-fuchsia-500 to-pink-500",
+    icon: HeartPulseIcon,
+    link: "https://doctor-care-mauve.vercel.app",
+    github: "https://github.com/Arthurmt15/DoctorCare",
+    stats: "Saúde • SEO 100",
+  },
+  {
+    title: "Niza Bet",
+    subtitle: "CSS • Betting UI",
+    desc: "Interface para plataforma de apostas com design system dark, componentes interativos e experiência fluida.",
+    tags: ["CSS", "JavaScript", "UI/UX", "Vercel"],
+    gradient: "from-amber-500 via-orange-500 to-red-600",
+    icon: Zap,
+    link: "https://niza-bet.vercel.app",
+    github: "https://github.com/Arthurmt15/niza-bet",
+    stats: "Betting • UI",
+  },
+  {
+    title: "Pagamento Aprovado",
+    subtitle: "HTML • Checkout",
+    desc: "Página de confirmação de pagamento com feedback visual, animações e pronta para integração com gateway.",
+    tags: ["HTML", "CSS", "Checkout", "Vercel"],
+    gradient: "from-green-500 via-emerald-500 to-teal-600",
+    icon: Check,
+    link: "https://pagamento-aprovado-beta.vercel.app",
+    github: "https://github.com/Arthurmt15/pagamento-aprovado",
+    stats: "Checkout • Live",
   },
 ];
 
@@ -691,16 +744,16 @@ function Projetos() {
             </h2>
           </div>
           <a
-            href="https://vercel.com"
+            href="https://github.com/Arthurmt15?tab=repositories"
             target="_blank"
             className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors"
           >
-            Ver todos na Vercel
+            Ver todos no GitHub • 8 projetos na Vercel
             <ExternalLink size={14} />
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p, idx) => {
             const Icon = p.icon;
             return (
@@ -778,7 +831,7 @@ function Projetos() {
                       Ver na Vercel
                     </a>
                     <a
-                      href="https://github.com"
+                      href={(p as any).github}
                       target="_blank"
                       className="inline-flex h-[42px] w-[42px] items-center justify-center rounded-full border border-zinc-800 bg-zinc-900 text-zinc-400 hover:text-white hover:border-zinc-700 transition-colors"
                     >
@@ -855,8 +908,8 @@ function Contato() {
 
             <div className="mt-8 space-y-3">
               {[
-                { icon: Mail, label: "E-mail", value: "arthur@exemplo.com", href: "mailto:arthur@exemplo.com" },
-                { icon: Github, label: "GitHub", value: "github.com/arthur", href: "https://github.com" },
+                { icon: Mail, label: "E-mail", value: "arthurknf@gmail.com", href: "mailto:arthurknf@gmail.com" },
+                { icon: Github, label: "GitHub", value: "github.com/Arthurmt15", href: "https://github.com/Arthurmt15" },
                 { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/arthur", href: "https://linkedin.com" },
               ].map((contact) => {
                 const Icon = contact.icon;
@@ -1000,9 +1053,9 @@ function Footer() {
 
           <div className="flex items-center gap-2">
             {[
-              { icon: Github, href: "https://github.com" },
+              { icon: Github, href: "https://github.com/Arthurmt15" },
               { icon: Linkedin, href: "https://linkedin.com" },
-              { icon: Mail, href: "mailto:arthur@exemplo.com" },
+              { icon: Mail, href: "mailto:arthurknf@gmail.com" },
             ].map((social, i) => (
               <a
                 key={i}
